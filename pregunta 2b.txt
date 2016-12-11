@@ -1,0 +1,20 @@
+public class IndiceIMC {
+ public static void main (String[] args) {
+ System.out.println("Calculo del indice de masa");
+ Scanner entrada = new Scanner(System.in);
+ System.out.print("Introduce el peso (en kg): ");
+ double peso = entrada.nextDouble();
+ System.out.print("Introduce la altura (en metros): ");
+ double altura = entrada.nextDouble()/100;
+ double imc = peso/(altura*altura);
+ System.out.println("Para un peso de "+ peso +" kilogramos y");
+ System.out.println("una altura de "+ altura + " metros");
+ System.out.println("el indice de Riesgo  "+ (int)imc);
+ if (imc<18.5-24.9) { System.out.println("Promedio");
+ } else if (imc<25-29.9) { System.out.println("Aumentado");
+ } else if (imc<30-34.9) { System.out.println("Moderado");
+ } else if (imc<35-39.9) { System.out.println("Severo");
+ } else if (imc<=/>40) { System.out.println("Muy Severo");
+}
+ }
+}
